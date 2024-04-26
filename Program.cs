@@ -47,14 +47,14 @@ class Program
     public static void FilterByYearOfBirth(List<Member> members)
     {
         List<Member> equal2000 = [];
-        List<Member> greaterThat2000 = [];
+        List<Member> greaterThan2000 = [];
         List<Member> lessThan2000 = [];
         foreach (var member in members)
         {
             switch (member.DateOfBirth.Year)
             {
                 case > 2000:
-                    greaterThat2000.Add(member);
+                    greaterThan2000.Add(member);
                     break;
                 case < 2000:
                     lessThan2000.Add(member);
@@ -71,7 +71,7 @@ class Program
         }
         Console.WriteLine();
         Console.WriteLine("List of members who has birth year is greater than 2000:");
-        foreach (var member in greaterThat2000)
+        foreach (var member in greaterThan2000)
         {
             Console.WriteLine(member);
         }
@@ -84,6 +84,7 @@ class Program
     }
     public static void FindFirstBornInHanoi(List<Member> members)
     {
+
         Console.WriteLine("The first person who was born in Ha Noi:");
         foreach (var member in members)
         {
@@ -102,7 +103,7 @@ class Program
             new Member("Linh", "Nguyen My", "Female", "04/07/1995", "Ha Noi", "0375284636", true),
             new Member("Phuong", "Nguyen Thi Ha", "Female", "07/04/2002", "Hai Phong", "0375284635", false),
             new Member("Thu", "Phan Thi Ha", "Female", "27/02/2003", "Nghe An", "0375284634", false),
-            new Member("Quang", "Tran Huy", "Male", "20/08/2004", "Ha Noi", "0375284633", false),
+            new Member("Quang", "Tran Huy", "Male", "20/04/1994", "Ha Noi", "0375284633", false),
         ];
 
         // print list
