@@ -84,7 +84,6 @@ class Program
     }
     public static void FindFirstBornInHanoi(List<Member> members)
     {
-
         Console.WriteLine("The first person who was born in Ha Noi:");
         foreach (var member in members)
         {
